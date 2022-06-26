@@ -10,11 +10,16 @@ mRNA_filt <- (exp_df %>% filter(exp_df$Genes %in% req_genes))
 
 df <- merge(methy_filt, mRNA_filt, by='Genes')
 
-df$Rank <- df$Rank.x + df$Rank.y
+df$Rank <- pmax(df$Rank.x, df$Rank.y)
 
-head(df)
+methy_df_new <- methy_df %>% filter(!methy_df$Genes %in% df$Genes)
+mRNA_df_new <- exp_df %>% filter(!exp_df$Genes %in% df$Genes)
 
-df_sorted <- df %>% arrange(desc(Rank))
+df_final <- union(union(methy_df_new, mRNA_df_new), df[, c("Genes", "Rank")])
+
+head(df_final)
+
+df_sorted <- df_final %>% arrange(desc(Rank))
 
 write.csv(df_sorted, "filtered_ranks.csv", row.names = FALSE)
 
