@@ -2,7 +2,7 @@
 
 _If you use this code in your work, please cite it as follows:_
 
-Reddy Rani Vangimalla, and J. Sreevalsan-Nair, “ _HCNM: Heterogeneous Correlation Network Model for Multi-level Integrative Study of Multi-omics Data for Cancer Subtype Prediction.” November, 2021. Pressented at 43nd Annual International Conferences of the IEEE Engineering in Medicine and Biology Society (**EMBC 2021**) DOI: 10.1109/EMBC46164.2021.9630781.
+Reddy Rani Vangimalla, and J. Sreevalsan-Nair, “ _HCNM: Heterogeneous Correlation Network Model for Multi-level Integrative Study of Multi-omics Data for Cancer Subtype Prediction.” November, 2021. Pressented at 43nd Annual International Conferences of the IEEE Engineering in Medicine and Biology Society (**EMBC 2021**) DOI: [10.1109/EMBC46164.2021.9630781](https://doi.org/10.1109/EMBC46164.2021.9630781)
 
 
 ## Instructions to run the code
